@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: reactive-app
+  main:
+    allow-bean-definition-overriding: true
+    
+logging:
+  level:
+    root: ERROR
+    
+server:
+  port: 8080
+  
+io:
+  netty:
+    eventLoopThreads: 8
+    epollBugWorkaround: true
+org:
+  jboss:
+    netty:
+      epollBugWorkaround: true
